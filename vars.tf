@@ -35,6 +35,7 @@ variable "replica_configurations" {
     skip_final_snapshot     = bool
     backup_retention_period = number
     replicate_source_db     = string
+    multi_az                = bool
   }))
   default = []
 }

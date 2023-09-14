@@ -13,4 +13,5 @@ resource "aws_db_instance" "replica-myinstance" {
   skip_final_snapshot     = each.value.skip_final_snapshot
   backup_retention_period = each.value.backup_retention_period
   replicate_source_db     = each.value.replicate_source_db
+  multi_az                = each.value.multi_az
 }
