@@ -36,6 +36,7 @@ variable "replica_configurations" {
     backup_retention_period = number
     replicate_source_db     = string
     multi_az                = bool
+    apply_immediately       = bool
   }))
   default = []
 }

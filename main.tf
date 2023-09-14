@@ -14,4 +14,5 @@ resource "aws_db_instance" "replica-myinstance" {
   backup_retention_period = each.value.backup_retention_period
   replicate_source_db     = each.value.replicate_source_db
   multi_az                = each.value.multi_az
+  apply_immediately       = each.value.apply_immediately
 }
