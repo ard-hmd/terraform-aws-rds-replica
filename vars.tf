@@ -17,3 +17,9 @@ variable "replica_configurations" {
   }))
   default = []
 }
+
+variable "replicate_source_db_identifiers" {
+  description = "List of identifiers of the RDS instances to replicate."
+  type        = list(string)
+  default     = []
+}
