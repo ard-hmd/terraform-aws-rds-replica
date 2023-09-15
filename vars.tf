@@ -17,9 +17,3 @@ variable "replica_configurations" {
   }))
   default = []
 }
-
-variable "replica_identifier_suffix" {
-  description = "Suffix to be added to the replica identifier"
-  type        = string
-  default     = "-replica"  # Vous pouvez définir un suffixe par défaut ou le laisser vide
-}
