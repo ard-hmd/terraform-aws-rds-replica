@@ -20,7 +20,6 @@ variable "replica_configurations" {
     multi_az                = bool
     apply_immediately       = bool
     identifier              = string
-    availability_zone       = string
   }))
   default = []
 }
