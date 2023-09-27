@@ -8,6 +8,7 @@ resource "aws_db_instance" "replica-myinstance" {
   multi_az                = each.value.multi_az
   apply_immediately       = each.value.apply_immediately
   identifier              = each.value.identifier
+  availability_zone       = each.value.availability_zone
 
   tags = {
     Name = "${var.resource_name_prefix}${each.value.identifier}"
